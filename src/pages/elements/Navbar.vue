@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="Navmain">
       <div class="header">
         <h1 v-on:click="navToggle(); $router.push('/')">Blake Late Show</h1>
       </div>
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.Navmain {
   width: 100%;
   height: 140px;
   background-color: #333;
@@ -64,7 +64,36 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 button {
+  height: 50px;
   color: white;
   font-family: 'Open Sans', sans-serif;
+  background: none;
+  border: none;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
 }
+button:hover {
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      -webkit-transform: translateY(0);
+      -ms-transform:     translateY(0);
+      transform:         translateY(0)
+    }
+
+    100% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform:     translateY(-5px);
+      transform:         translateY(-5px)
+    }
+  }
 </style>

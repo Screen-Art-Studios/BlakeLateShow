@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="Gamain">
     <h2>Gallery</h2>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-.main {
+.Gamain {
   background-color: #333;
   height: 100%;
   width: 100%;

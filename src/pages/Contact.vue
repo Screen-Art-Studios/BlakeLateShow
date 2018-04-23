@@ -1,6 +1,7 @@
 <template>
-  <div class="main">
+  <div class="Comain">
     <h2>Contact</h2>
+    <p>602-525-8518</p>
   </div>
 </template>
 
@@ -14,7 +15,7 @@ export default {
 </script>
 
 <style>
-.main {
+.Comain {
   background-color: #333;
   height: 100%;
   width: 100%;
@@ -23,6 +24,11 @@ export default {
 h2 {
   font-size: 2em;
   color: white;
-  margin-top: 200px;
+  margin-top: 150px;
+  text-align: center;
+}
+p {
+  text-align: center;
+  color: white;
 }
 </style>
