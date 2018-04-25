@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .Navmain {
   width: 100%;
-  height: 140px;
+  height: 142px;
   background-color: #333;
   position: fixed;
 }
