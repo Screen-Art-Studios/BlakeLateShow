@@ -15,6 +15,7 @@
     </div>
     </div>
     <div class="boardsModal modal" v-if="modal==='bd'">
+      <img v-on:click="board.full = !board.full" v-bind:class="{'boardGallery': !board.full, 'boardFull': board.full}" v-for="board in boards" v-bind:key="board.source" v-bind:src="board.source"/>
     </div>
   </div>
 </template>
@@ -24,7 +25,9 @@ export default {
   name: 'Gallery',
   data () {
     return {
-      modal: ''
+      modal: '',
+      boards: [{source: '../assets/1.jpg', full: false},
+        {source: '../assets/2.jpg', full: false}]
     }
   }
 }
