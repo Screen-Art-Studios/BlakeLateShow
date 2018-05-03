@@ -2,7 +2,6 @@
     <div class="Homain">
       <iframe width="90%" height="30%" src="https://www.youtube.com/embed/NNftPKFKhDQ" frameborder="0"  allowfullscreen></iframe>
       <h2>Activist Ron Blake has been inspiring thousands of people around the country. Giving support and hope to victims of PTSD through his incredible story of survival and perseverance. <span v-on:click="$router.push('/About')">Learn more about his story here.</span></h2>
-      <h4>More Links Below</h4>
       <div class="links">
       <a class="BP" href="https://www.youtube.com/watch?v=V0LMlFDIbgQ&t=4s">"The Blake Project"</a>
       <a class="IP" href="https://www.youtube.com/watch?v=F5yO4tRIXTA&t=101s">"Ignite Phoenix 18"</a>
@@ -59,36 +58,19 @@ span {
 iframe {
   margin-left: 5%;
 }
-h4 {
-  margin-left: 5%;
-  color: grey;
+.links {
+  font-size: .8em;
+  text-align: left;
+  display: grid;
+  grid-template-rows: repeat(8, 20px);
+  overflow-y: scroll;
 }
 a {
-  height: 300px;
-  text-align: left;
+  height: 20px;
   margin-left: 5%;
+  color: #fff;
 }
-.IP {
-  margin-top: 30px;
-}
-.FA {
-  margin-top: 60px;
-}
-.IE {
-  margin-top: 90px;
-}
-.EM {
-  margin-top: 120px;
-}
-.MB {
-  margin-top: 150px;
-}
-.JC {
-  margin-top: 180px;
-}
-.AT {
-  margin-top: 210px;
-}
+
 @media only screen and (min-width:700px) {
   iframe {
     margin-top: 50px;
@@ -97,16 +79,11 @@ a {
   .Homain {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 250px;
   }
   h2 {
     margin-top: 50px;
     font-size:
-  }
-  h4 {
-    display: none;
-  }
-  a {
-    grid-column: 1;
   }
 }
 @media only screen and (min-width:1000px) {
@@ -117,5 +94,11 @@ a {
   iframe {
     height: 300px;
   }
+  .Homain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 250px;
+  }
+
 }
 </style>

@@ -5,13 +5,13 @@
     <button class="boardsButton button" v-on:click="modal='bd'">Blake's Boards</button>
     <div class="journeyModal modal" v-if="modal==='jn'">
       <div class="journeyView">
-      <img src="../assets/1.jpg">
-      <img src="../assets/2.jpg">
-      <img src="../assets/7.jpg">
-      <img src="../assets/4.jpg">
-      <img src="../assets/5.jpg">
-      <img src="../assets/6.jpg">
-      <img src="../assets/3.jpg">
+      <img src="../assets/journey/1.jpg">
+      <img src="../assets/journey/2.jpg">
+      <img src="../assets/journey/7.jpg">
+      <img src="../assets/journey/4.jpg">
+      <img src="../assets/journey/5.jpg">
+      <img src="../assets/journey/6.jpg">
+      <img src="../assets/journey/3.jpg">
     </div>
     </div>
     <div class="boardsModal modal" v-if="modal==='bd'">

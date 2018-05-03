@@ -96,4 +96,12 @@ button:hover {
       transform:         translateY(-5px)
     }
   }
+  @media only screen and (min-width:1000px) {
+    button {
+      font-size: 1.5em;
+    }
+    h1 {
+      font-size: 3.5em;
+    }
+  }
 </style>
