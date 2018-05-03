@@ -73,16 +73,19 @@ a {
 @media only screen and (min-width:700px) {
   iframe {
     margin-top: 50px;
-    height: 200px;
+    height: 300px;
   }
   .Homain {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 250px;
+    grid-template-rows: 400px 250px;
   }
   h2 {
     margin-top: 50px;
     font-size: 1em;
+  }
+  .links {
+    overflow-y: hidden;
   }
 }
 
@@ -90,13 +93,17 @@ a {
   .Homain {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 380px 250px;
+    grid-template-rows: 580px 250px;
   }
   h2 {
     font-size: 1.5em;
+    margin-top: 30%;
   }
   iframe {
-    height: 300px;
+    height: 500px;
+  }
+  .links {
+    overflow-y: hidden;
   }
 }
 </style>
