@@ -30,8 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
 .Homain {
   background-color: #333;
   height: 100%;
@@ -83,22 +82,21 @@ a {
   }
   h2 {
     margin-top: 50px;
-    font-size:
+    font-size: 1em;
   }
 }
-@media only screen and (min-width:1000px) {
-  h2 {
-    font-size: 1.5em;
-  }
 
-  iframe {
-    height: 300px;
-  }
+@media only screen and (min-width:1000px) {
   .Homain {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 380px 250px;
   }
-
+  h2 {
+    font-size: 1.5em;
+  }
+  iframe {
+    height: 300px;
+  }
 }
 </style>

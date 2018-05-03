@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="less">
 .Comain {
   background-color: #333;
   height: 100%;

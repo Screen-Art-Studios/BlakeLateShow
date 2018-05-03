@@ -199,7 +199,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="less">
 .Gamain {
   background-color: #333;
   height: 100%;
@@ -265,7 +265,7 @@ img {
   overflow-y: scroll;
   display: grid;
   grid-template-columns: 200px 200px;
-  grid-template-rows: repeat(50, 150px);
+  grid-template-rows: repeat(86, 150px);
 }
 
 @media only screen and (min-width:700px) {

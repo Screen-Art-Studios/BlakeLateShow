@@ -11,7 +11,9 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

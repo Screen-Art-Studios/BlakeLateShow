@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="less">
 .Abmain {
   background-color: #333;
   height: 100%;
