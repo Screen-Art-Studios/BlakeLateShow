@@ -27,7 +27,15 @@ export default {
     return {
       modal: '',
       boards: [{source: '../assets/1.jpg', full: false},
-        {source: '../assets/2.jpg', full: false}]
+        {source: '../assets/2.jpg', full: false},
+        {source: '../assets/3.jpg', full: false},
+        {source: '../assets/4.jpg', full: false},
+        {source: '../assets/5.jpg', full: false},
+        {source: '../assets/6.jpg', full: false},
+        {source: '../assets/7.jpg', full: false},
+        {source: '../assets/8.jpg', full: false},
+        {source: '../assets/9.jpg', full: false},
+        {source: '../assets/10.jpg', full: false}]
     }
   }
 }
@@ -80,6 +88,15 @@ img {
 }
 .journeyModal {
   background-color: #333;
+}
+.boardGallery {
+
+}
+.boardsModal {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(50, 150px);
 }
 
 @media only screen and (min-width:700px) {

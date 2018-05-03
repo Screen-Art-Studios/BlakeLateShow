@@ -1,8 +1,6 @@
 <template>
   <div class="Fmain">
     <div class="social">
-      <div class="fb"></div>
-      <div class="tw"></div>
     </div>
     <h3>Powered by: ScreenArt Studios&#169;</h3>
   </div>
@@ -31,9 +29,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.fb {
 
-}
 h3 {
   color: #999;
   font-size: .8em;
