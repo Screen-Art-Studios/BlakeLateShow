@@ -3,16 +3,8 @@
     <h2>Gallery</h2>
     <button class="journeyButton button" v-on:click="modal='jn'">The Journey</button>
     <button class="boardsButton button" v-on:click="modal='bd'">Blake's Boards</button>
-    <div class="journeyModal modal" v-if="modal==='jn'">
-      <div class="journeyView">
-      <img src="../assets/journey/1.jpg">
-      <img src="../assets/journey/2.jpg">
-      <img src="../assets/journey/7.jpg">
-      <img src="../assets/journey/4.jpg">
-      <img src="../assets/journey/5.jpg">
-      <img src="../assets/journey/6.jpg">
-      <img src="../assets/journey/3.jpg">
-    </div>
+    <div class="journeyView modal" v-if="modal==='jn'">
+      <img v-on:click="journey.full = !journey.full" v-bind:class="{'journeyGallery': !journey.full, 'boardFull': journey.full}" v-for="journey in journeys" v-bind:key="journey.source" v-bind:src="journey.source"/>
     </div>
     <div class="boardsModal modal" v-if="modal==='bd'">
       <img v-on:click="board.full = !board.full" v-bind:class="{'boardGallery': !board.full, 'boardFull': board.full}" v-for="board in boards" v-bind:key="board.source" v-bind:src="board.source"/>
@@ -25,17 +17,21 @@ export default {
   name: 'Gallery',
   data () {
     return {
-      modal: '',
-      boards: [{source: '../assets/1.jpg', full: false},
-        {source: '../assets/2.jpg', full: false},
-        {source: '../assets/3.jpg', full: false},
-        {source: '../assets/4.jpg', full: false},
-        {source: '../assets/5.jpg', full: false},
-        {source: '../assets/6.jpg', full: false},
-        {source: '../assets/7.jpg', full: false},
-        {source: '../assets/8.jpg', full: false},
-        {source: '../assets/9.jpg', full: false},
-        {source: '../assets/10.jpg', full: false}]
+      modal: 'jn',
+      journeys: [{source: '../assets/journey/1.jpg', full: false},
+        {source: '../assets/journey/2.jpg', full: false},
+        {source: '../assets/journey/3.jpg', full: false},
+        {source: '../assets/journey/4.jpg', full: false},
+        {source: '../assets/journey/5.jpg', full: false},
+        {source: '../assets/journey/6.jpg', full: false},
+        {source: '../assets/journey/7.jpg', full: false}],
+      boards: [{source: '../assets/journey/1.jpg', full: false},
+        {source: '../assets/journey/2.jpg', full: false},
+        {source: '../assets/journey/3.jpg', full: false},
+        {source: '../assets/journey/4.jpg', full: false},
+        {source: '../assets/journey/5.jpg', full: false},
+        {source: '../assets/journey/6.jpg', full: false},
+        {source: '../assets/journey/7.jpg', full: false}]
     }
   }
 }
@@ -48,6 +44,7 @@ export default {
   width: 100%;
   position: fixed;
   text-align: center;
+  overflow-y: scroll;
 }
 h2 {
   font-size: 2em;
@@ -75,8 +72,8 @@ h2 {
 }
 .journeyView {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 200px);
   grid-gap: 5%;
   background-color: #333;
 }
@@ -86,11 +83,21 @@ img {
   margin-top: 5%;
   padding: 5%;
 }
-.journeyModal {
-  background-color: #333;
+.journeyGallery {
+  width: 90%;
+  height: auto;
 }
 .boardGallery {
-
+  width: 80%;
+  height: auto;
+}
+.boardFull {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 220px;
+  z-index: 3;
+  background: #333 100% 100%;
 }
 .boardsModal {
   overflow-y: scroll;
