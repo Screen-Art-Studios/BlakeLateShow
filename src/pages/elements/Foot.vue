@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .Fmain {
   height: 100px;
   width: 100%;
@@ -32,10 +32,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .fb {
-  background-image: url('../assets/face.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+
 }
 h3 {
   color: #999;
