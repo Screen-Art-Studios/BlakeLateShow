@@ -261,10 +261,10 @@ img {
 }
 .boardFull {
   width: auto;
-  height: 80%;
+  height: 40%;
   position: fixed;
-  top: 10%;
-  left: 5%;
+  top: 20%;
+  left: 10%;
   z-index: 3;
   background-color: #333;
   background-position: center;
@@ -298,6 +298,17 @@ img {
     grid-template-rows: repeat(4, 450px) 200px;
     overflow-y: scroll;
     height: 2000px;
+  }
+  .boardFull {
+    width: auto;
+    height: 80%;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    z-index: 3;
+    background-color: #333;
+    background-position: center;
+    background-size: contain;
   }
   .boardsModal {
     overflow-y: scroll;
