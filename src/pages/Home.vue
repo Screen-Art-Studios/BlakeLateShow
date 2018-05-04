@@ -88,7 +88,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 150px 200px;
-    overflow-y: hidden;
   }
   h2 {
     grid-column-start: 1;
@@ -99,7 +98,6 @@ a {
   .links {
     grid-column-start: 1;
     grid-column-end: 3;
-    overflow-y: hidden;
   }
 }
 
@@ -108,7 +106,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 580px 200px 300px;
-    overflow-y: hidden;
   }
   h2 {
     font-size: 1.5em;
@@ -121,7 +118,6 @@ a {
     line-height: 1.6em;
     grid-column-start: 1;
     grid-column-end: 3;
-    overflow-y: hidden;
   }
 }
 </style>
