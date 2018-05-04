@@ -4,10 +4,16 @@
     <button class="journeyButton button" v-on:click="modal='jn'">The Journey</button>
     <button class="boardsButton button" v-on:click="modal='bd'">Blake's Boards</button>
     <div class="journeyView modal" v-if="modal==='jn'">
-      <img v-on:click="journey.full = !journey.full" v-bind:class="{'journeyGallery': !journey.full, 'boardFull': journey.full}" v-for="journey in journeys" v-bind:key="journey.source" v-bind:src="journey.source"/>
+      <div v-on:click="journey.full = !journey.full" v-for="journey in journeys" v-bind:key="journey.source">
+        <img v-bind:class="{'journeyGallery': !journey.full, 'boardFull': journey.full}" v-bind:src="journey.source"/>
+        <div class="backgroundDiv" v-if="journey.full"></div>
+      </div>
     </div>
     <div class="boardsModal modal" v-if="modal==='bd'">
-      <img v-on:click="board.full = !board.full" v-bind:class="{'boardGallery': !board.full, 'boardFull': board.full}" v-for="board in boards" v-bind:key="board.source" v-bind:src="board.source"/>
+      <div v-on:click="board.full = !board.full" v-for="board in boards" v-bind:key="board.source">
+        <img v-bind:class="{'boardGallery': !board.full, 'boardFull': board.full}" v-bind:src="board.source"/>
+        <div class="backgroundDiv" v-if="board.full"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -254,17 +260,34 @@ img {
   height: auto;
 }
 .boardFull {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 80%;
   position: fixed;
-  top: 220px;
+  top: 10%;
+  left: 5%;
   z-index: 3;
-  background: #333 100% 100%;
+  background-color: #333;
+  background-position: center;
+  background-size: contain;
+}
+.backgroundDiv {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-color: #333;
+  background-size: contain;
+  width: 100000px;
+  height: 100000px;
 }
 .boardsModal {
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
   grid-template-rows: repeat(86, 150px);
 }
 
@@ -272,9 +295,26 @@ img {
   .journeyView {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(4, 450px) 200px;
     overflow-y: scroll;
-    height: 800px;
+    height: 2000px;
+  }
+  .boardsModal {
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8%;
+    grid-template-rows: repeat(86, 150px);
+  }
+  .journeyGallery {
+    width: 80%;
+    height: auto;
+    margin-bottom: 6%;
+  }
+  .boardGallery {
+    width: 80%;
+    height: auto;
+    margin-bottom: 6%;
   }
 }
 </style>

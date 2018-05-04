@@ -31,11 +31,35 @@ h2 {
 p {
   text-align: center;
   color: white;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 a {
   text-align: center;
   color: #fff;
   width: 100%;
   position: absolute;
+}
+@media only screen and (min-width:700px) {
+  p {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+  a {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width:1000px) {
+  p {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 3.4em;
+  }
+  a {
+    font-size: 3em;
+  }
 }
 </style>

@@ -41,5 +41,22 @@ p {
   margin-left: 5%;
   text-rendering: optimizeLegibility;
   text-align: left;
+  font-family: sans-serif;
+}
+@media only screen and (min-width:700px) {
+  p {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (min-width:1000px) {
+  p {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 2.9em;
+  }
 }
 </style>
