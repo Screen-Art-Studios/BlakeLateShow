@@ -21,9 +21,11 @@ export default {
   background-color: #333;
   height: 100%;
   width: 100%;
+  bottom: 0;
+  top: 0;
   position: absolute;
-  overflow-y: auto;
-  margin-bottom: 100px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
 }
 .Abmain::-webkit-scrollbar {
 display: none;
@@ -37,8 +39,8 @@ h2 {
 }
 p {
   color: white;
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   text-rendering: optimizeLegibility;
   text-align: left;
   font-family: sans-serif;
@@ -46,6 +48,8 @@ p {
 @media only screen and (min-width:700px) {
   p {
     font-size: 1.6em;
+    width: 60%;
+    margin-left: 20%;
   }
   h2 {
     font-size: 2.4em;
@@ -54,6 +58,8 @@ p {
 @media only screen and (min-width:1000px) {
   p {
     font-size: 2.4em;
+    width: 60%;
+    margin-left: 20%;
   }
   h2 {
     font-size: 2.9em;

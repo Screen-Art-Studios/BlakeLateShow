@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+html {
+  overflow-y: scroll;
+}
 .fade-enter-active, .fade-leave-active {
   transition: all .25s ease;
   transition: all .25s cubic-bezier(1.0, 0.5, 0.8, 1.0);
