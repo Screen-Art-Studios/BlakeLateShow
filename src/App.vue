@@ -22,6 +22,7 @@ export default {
 
 <style>
 html {
+  background-color: #333;
   overflow-y: scroll;
 }
 .fade-enter-active, .fade-leave-active {

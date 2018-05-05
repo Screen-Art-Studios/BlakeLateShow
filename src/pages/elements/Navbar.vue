@@ -47,6 +47,7 @@ export default {
   height: 142px;
   background-color: #333;
   position: fixed;
+  top: 0;
 }
 
 .header {

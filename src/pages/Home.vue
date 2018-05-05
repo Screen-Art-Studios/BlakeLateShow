@@ -1,7 +1,7 @@
 <template>
     <div class="Homain">
       <iframe width="90%" height="100%" src="https://www.youtube.com/embed/NNftPKFKhDQ" frameborder="0"  allowfullscreen></iframe>
-      <h2>Activist Ron Blake has been inspiring thousands of people around the country. Giving support and hope to victims of PTSD through his incredible story of survival and perseverance. <span v-on:click="$router.push('/About')">Learn more about his story here.</span></h2>
+      <h2>Activist Ron Blake has been inspiring thousands of people around the country. Giving support and hope to victims of PTSD and sexual assault through his incredible story of survival and perseverance. <span v-on:click="$router.push('/About')">Learn more about his story here.</span></h2>
       <div class="links">
         <a class="BP" href="https://www.youtube.com/watch?v=V0LMlFDIbgQ&t=4s">"The Blake Project"</a>
         <a class="IP" href="https://www.youtube.com/watch?v=F5yO4tRIXTA&t=101s">"Ignite Phoenix 18"</a>
@@ -9,6 +9,10 @@
         <a class="IE" href="https://www.insideedition.com/headlines/22863-man-with-ptsd-says-stephen-colbert-saved-his-life-and-now-hes-on-a-mission">"Inside Edition Article"</a>
         <a class="EM" href="https://www.edgemedianetwork.com/news/national//258319">"Edge Media Network Article"</a>
         <a class="MB" href="https://www.youtube.com/watch?v=GaIs_8JSWuA">"Martin Becerra Video"</a>
+        <a class="AT" href="http://latalkradio.com/sites/default/files/audio/Therapy-020818.mp3">"All Things Therapy Interview"</a>
+        <a class="TE" href="http://www.therainbowtimesmass.com/from-trauma-to-triumph-a-gay-mans-mission-to-overcome-ptsd-educate-others-on-sexual-assault/">Rainbow Times Article</a>
+        <a class="HN" href="http://www.nwitimes.com/niche/get-healthy/mental-health/hobart-native-travels-country-raising-awareness-about-ptsd/article_c0427ae9-5564-5e9f-8e9f-38921ce614e2.html">NWI.com's Article</a>
+        <a class="SA" href="https://pridesource.com/article/sexual-assault-survivor-collects-and-spreads-messages-of-support/">Pride Source Article</a>
       </div>
     </div>
 </template>
@@ -40,7 +44,7 @@ export default {
   bottom: 0;
   padding-bottom: 200px;
   display: grid;
-  grid-template-rows: 200px 150px 550px;
+  grid-template-rows: 200px 150px 150px;
   overflow-y: scroll;
 }
 
