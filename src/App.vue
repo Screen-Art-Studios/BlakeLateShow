@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-html {
+#q-app {
   background-color: #333;
   overflow-y: scroll;
 }
