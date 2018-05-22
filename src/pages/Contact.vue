@@ -19,18 +19,19 @@ export default {
 <style scoped lang="less">
 .Comain {
   background-color: #333;
+  padding-top: 180px;
   height: 100%;
   width: 100%;
   position: fixed;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
-  margin-top: 150px;
+  margin-top: 180px;
   text-align: center;
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: white;
   text-align: center;
 }
@@ -48,30 +49,30 @@ a {
 }
 @media only screen and (min-width:700px) {
   p {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   h2 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   h3 {
-    font-size: 2.1em;
+    font-size: 1.9em;
   }
   a {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 @media only screen and (min-width:1000px) {
   p {
-    font-size: 3em;
+    font-size: 2.4em;
   }
   h2 {
-    font-size: 3.4em;
+    font-size: 2.8em;
   }
   h3 {
-    font-size: 3.1em;
+    font-size: 2.6em;
   }
   a {
-    font-size: 3em;
+    font-size: 2.4em;
   }
 }
 </style>
