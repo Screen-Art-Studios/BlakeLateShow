@@ -19,7 +19,7 @@ export default {
 <style scoped lang="less">
 .Comain {
   background-color: #333;
-  padding-top: 180px;
+  padding-top: 60px;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -27,7 +27,7 @@ export default {
 h2 {
   font-size: 1.8em;
   color: white;
-  margin-top: 180px;
+  margin-top: 140px;
   text-align: center;
 }
 h3 {
